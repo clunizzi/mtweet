@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
 	has_many :posts
+	has_many :pictures
 	has_many :likes
 
 	has_many :active_relationships, class_name:  "Relationship",
